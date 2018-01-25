@@ -1,28 +1,19 @@
-html, body {
-  margin: 0.5;
-  padding: 0.5;
-}
-
-html {
-  font-size: 10px;
-  background-color: darkslategrey;
-}
-
-/*body {
-  width: 70%;
-  min-width: 800px;
-  margin: 0 auto;
-}*/
 * {
     box-sizing: border-box;
 }
-/* Style NavBar */
+
+body {
+  margin: 0;
+}
+
+/* Style the top navigation bar */
 .topnav {
-    overflow:hidden;
+    overflow: hidden;
     background-color: #333;
 }
-/* Style Nav Links*/
-.topnav a,span {
+
+/* Style the topnav links */
+.topnav a, span {
     float: left;
     display: block;
     color: #f2f2f2;
@@ -30,18 +21,21 @@ html {
     padding: 14px 16px;
     text-decoration: none;
 }
+
+/* Change color on hover */
 .topnav a:hover {
     background-color: #ddd;
     color: black;
 }
 
-
-header {
-    box-shadow: 4px 1px 4px 1px slategrey;
-    display: flex;
-
+/* Style the content */
+.content {
+    background-color: slategrey; /*#ddd;*/
+    padding: 10px;
+    height: 200px; /* Should be removed. Only for demonstration */
 }
-header h1{
+
+.header h2{
     font-size: 4em;
     text-align: center;
     color: aqua;
@@ -49,67 +43,26 @@ header h1{
     padding-left: 10%;
 
 }
-header img {
-    width: 9%;
-    height: 12%;
-    float: right;
+.header img {
+    width: 17%;
+    height: 18%;
+    float: left;
     flex: 1;
-
 }
 
-main {
-    display: flex;
-    padding-top: 2px;
-    padding-left: 2px;
-}
-
-/* Container for flexboxes */
-.row {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-}
 .column {
-    -webkit-flex: 1;
-    -ms-flex: 1;
     flex: 1;
     padding: 10px;
     height: 200px;
-
+}
+.column h2 {
+    box-shadow: 1px 1px 1px 1px #ddd;
 }
 
 
-.column:nth-child(h2,p,p) {
-    /*flex: 4;
-    box-shadow: 2px 2px 2px 2px grey;
-    padding-left: 3px;
-    margin-top: 2%; */
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    padding: 10px;
-    background-color: lightsteelblue;
-
-}
-.column h2:nth-child(1) {
-    font-size: 2.8em;
-    text-align: center;
-}
-.column p:nth-child(1,2) {
-    font-size: 1.5em;
-    text-align: center;
-}
-/*
-@media (max-width: 600px) {
-    .row {
-      -webkit-flex-direction: column;
-      flex-direction: column;
-    }
-}
-*/
 .Hpage {
-    flex: 1;
+    border-width: medium;
+    flex: 2;
     margin-left: 10px;
     margin-top: 4px;
     padding: 1%;
@@ -129,10 +82,17 @@ main {
     color: lightcoral;
 }
 
-footer {
+
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
     margin-top: 80%;
 }
-footer img{
+
+
+.footer img{
     flex: 100%;
     max-width: 100%;
     padding-left: 90%;
