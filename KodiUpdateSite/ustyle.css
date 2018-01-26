@@ -9,7 +9,7 @@ body {
 /* Style the side navigation */
 .sidenav {
     height: 100%;
-    width: 200px;
+    width: 145px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -37,4 +37,25 @@ body {
 .content {
     margin-left: 200px;
     padding-left: 20px;
+}
+
+.walkthrough {
+    margin-left: 15%;
+    padding-left: 10%;
+}
+
+.walkthrough img {
+    display: block;
+    float: right;
+    height: 30%;
+    width: 25%;
+    margin-right: 10%;
+}
+
+.kopen {
+
+}
+
+.inkodi {
+
 }

@@ -41,6 +41,7 @@ body {
     color: aqua;
     text-shadow: 2px 1px teal;
     padding-left: 10%;
+    margin-bottom: 10px;
 
 }
 .header img {
@@ -48,12 +49,15 @@ body {
     height: 18%;
     float: left;
     flex: 1;
+    margin-top: -25px;
 }
 
 .column {
     flex: 1;
     padding: 10px;
     height: 200px;
+    width: 60%;
+
 }
 .column h2 {
     box-shadow: 1px 1px 1px 1px #ddd;
@@ -61,10 +65,11 @@ body {
 
 
 .Hpage {
-    border-width: medium;
-    flex: 2;
+    display: inline-block;
+    float:right;
+    /*border-width: medium;*/
+    margin-top: -215px;
     margin-left: 10px;
-    margin-top: 4px;
     padding: 1%;
     background-image: url("kodi_wallpaper.jpg");
 }
@@ -78,7 +83,7 @@ body {
 }
 .Hpage p {
     text-align: center;
-    font-size: 13px;
+    font-size: 15px;
     color: lightcoral;
 }
 
